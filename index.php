@@ -69,5 +69,3 @@ foreach ( $files as $file ) {
 
 	echo $file . " has been converted successfully!\n";
 }
-
-?>
