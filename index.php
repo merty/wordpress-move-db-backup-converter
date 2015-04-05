@@ -29,10 +29,10 @@ $files = array();
 
 // Get all the input files inside the 'in' directory
 if ( $d = opendir( 'in' ) ) {
-    while ( false !== ( $entry = readdir( $d ) ) )
-        if ( $entry != "." && $entry != ".." && ! is_dir( $entry ) )
-            array_push( $files, $entry );
-    closedir( $d );
+	while ( false !== ( $entry = readdir( $d ) ) )
+		if ( $entry != "." && $entry != ".." && ! is_dir( $entry ) )
+			array_push( $files, $entry );
+	closedir( $d );
 } else {
 	die( 'Could not get the list of input files!' );
 }
